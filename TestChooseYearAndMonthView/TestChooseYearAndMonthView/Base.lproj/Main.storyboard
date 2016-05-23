@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示选的时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpw-St-RNK">
+                                <rect key="frame" x="0.0" y="40" width="150" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.73726539018168924" blue="0.39004966858587897" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="4kQ-0A-cxG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5W-5n-SNd">
+                                <rect key="frame" x="0.0" y="103" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.58632493849149814" green="0.51587489158335531" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="QBD-1c-UlC"/>
+                                    <constraint firstAttribute="height" constant="35" id="jTb-Fp-OyF"/>
+                                </constraints>
+                                <state key="normal" title="选择时间"/>
+                                <connections>
+                                    <action selector="clickToChooseTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bg8-MA-RHB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72904732598424138" green="0.91029331135337344" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mpw-St-RNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Eav-9g-hLK"/>
+                            <constraint firstItem="B5W-5n-SNd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fxv-Tz-Zp8"/>
+                            <constraint firstItem="Mpw-St-RNK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="b8b-hD-TKB"/>
+                            <constraint firstItem="B5W-5n-SNd" firstAttribute="top" secondItem="Mpw-St-RNK" secondAttribute="bottom" constant="43" id="gMp-kX-dHQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="Mpw-St-RNK" id="mn0-5p-SZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="360"/>
+        </scene>
+    </scenes>
+</document>
